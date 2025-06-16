@@ -120,7 +120,8 @@ Books Issued:
 
 **Sarthak Jahagirdar**
 📍 Student Developer | Electronics & Telecommunication Engineer
- | [LinkedIn](www.linkedin.com/in/sarthak-jahagirdar-59347a365) | 
+ | [LinkedIn](https://www.linkedin.com/in/sarthak-jahagirdar-59347a365/) | 
+ 
 
 ---
 

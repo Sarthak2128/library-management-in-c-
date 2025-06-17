@@ -1,8 +1,4 @@
-Here is a **professional and clean `README.md`** file tailored for your **C-based Library Management System** project:
 
----
-
-````markdown
 # 📚 Library Management System in C
 
 A simple and functional **Library Management System** built using the C programming language. This terminal-based application is designed to help educational institutions efficiently manage their book inventory and student records. The system provides secure admin login, book issuance and return functionalities, real-time tracking of issued and available books, and auto-generated e-receipts — all implemented using fundamental C concepts.

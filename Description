@@ -1,0 +1,188 @@
+📚 Library Management System
+🏛 Government College of Engineering, Yavatmal
+Language: C Programming
+🧾 Program Overview
+This program is a basic Library Management System that simulates how books are issued and returned in a college library. It provides features such as:
+
+Login authentication
+
+Issuing books to students
+
+Returning issued books
+
+Displaying available and issued books
+
+Storing student details for each issued book
+
+This system is designed to run on the console using a menu-driven interface, storing everything temporarily in memory.
+
+🧱 Data Structures & Variables
+🔐 Login Credentials:
+c
+Copy
+Edit
+char correct_user[] = "admin";
+char correct_pass[] = "1234";
+Used to restrict access to authorized personnel only.
+
+📦 Book Data:
+c
+Copy
+Edit
+char book[20][50] = { ... }; // List of available books
+char issued_books[20][50];   // Issued book titles
+book[] holds up to 20 book titles.
+
+issued_books[] holds all issued books.
+
+total_books & issued_count are counters used to manage both.
+
+🧑‍🎓 Student Data:
+c
+Copy
+Edit
+char student_name[20][50], student_branch[20][30];
+char roll_no[20][20], mobile[20][20];
+These arrays store student information corresponding to each issued book, indexed by issued_count.
+
+🔐 1. Login System
+🔍 Logic:
+User inputs a username and password.
+
+The input is compared with admin/1234 using strcmp().
+
+If incorrect → Access denied.
+
+If correct → Proceeds to the main menu.
+
+📤 Sample Output:
+
+pgsql
+Copy
+Edit
+Login successful. Welcome to the library.
+📋 2. Main Menu
+The system uses a while (1) infinite loop to keep the menu running until the user exits.
+
+🧭 Menu Options:
+markdown
+Copy
+Edit
+1. Issue Books
+2. Return Book
+3. View Available Books
+4. View Issued Books
+5. Exit
+📚 3. Issuing Books
+📝 Steps:
+Student details (name, branch, roll no, phone) are collected.
+
+List of available books is displayed with numbers.
+
+The user specifies how many books they want to issue.
+
+For each book:
+
+Enters the book number.
+
+Copies the book title into issued_books[].
+
+Stores student details at the same index.
+
+Shifts remaining books up to remove the selected one.
+
+Updates counters: total_books--, issued_count++.
+
+📄 Output Example:
+markdown
+Copy
+Edit
+--------- Issue Receipt ---------
+Student   : Aryan Kumar
+Branch    : CSE
+Roll No   : 45
+Mobile No : 9876543210
+Books Issued:
+  - C Programming
+  - Digital Electronics
+----------------------------------
+🔁 4. Returning Books
+📝 Steps:
+Shows the list of issued books along with student names.
+
+Prompts the user to enter the book number to return.
+
+Moves the book from issued_books[] back to book[].
+
+Shifts all remaining entries in the issued list to fill the gap.
+
+Updates counters: issued_count--, total_books++.
+
+📄 Output Example:
+nginx
+Copy
+Edit
+Book returned successfully.
+📖 5. Viewing Available Books
+Lists all books from the book[] array using total_books.
+
+If no books are available:
+
+arduino
+Copy
+Edit
+None currently available.
+📘 6. Viewing Issued Books
+Displays each issued book along with:
+
+Student name
+
+Roll number
+
+Mobile number
+
+📄 Output:
+less
+Copy
+Edit
+1. C Programming -> Aryan (Roll: 45, Mob: 9876543210)
+2. Digital Electronics -> Aryan (Roll: 45, Mob: 9876543210)
+🚪 7. Exit
+Option 5 exits the program:
+
+cpp
+Copy
+Edit
+Exiting... Thank you for using the Library System.
+✅ Strengths of the Program
+✅ Simple and easy to understand
+
+✅ Efficient use of arrays and strcmp, fgets, strcpy
+
+✅ Covers realistic scenarios of library operations
+
+✅ Tracks issued book history with student details
+
+🔧 Suggestions for Improvement
+Add file storage for permanent record-keeping.
+
+Add admin/student roles with multiple logins.
+
+Prevent multiple issues of the same book.
+
+Add a due date / fine calculation system.
+
+Use struct to group student+book data more cleanly.
+
+📚 Conclusion
+This program is a perfect beginner-level C project to understand:
+
+Array manipulation
+
+String functions
+
+Menu-driven logic
+
+Data tracking using parallel arrays
+
+It's a solid simulation of a real-world library system and a great stepping stone for more advanced management systems.

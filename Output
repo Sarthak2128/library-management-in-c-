@@ -1,0 +1,72 @@
+===============================================
+ Government Collage Of Engineering Yavatmal    
+
+                  Library      
+
+===============================================
+
+Login to Continue
+
+Username: admin
+Password: 1234
+
+Login successful. Welcome to the library.
+
+========= MAIN MENU =========
+1. Issue Books
+2. Return Book
+3. View Available Books
+4. View Issued Books
+5. Exit
+=============================
+Enter your choice (1-5): 1
+
+Enter Student Details:
+Name        : sarthak
+Branch      : cse
+Roll Number : 18
+Mobile No.  : 9422395817
+
+Available Books:
+1. C Programming
+2. Digital Electronics
+3. Thermodynamics
+4. Basic Electrical
+5. Building Materials
+
+How many books do you want to issue (max 5): 1
+
+Enter book number to issue (1 of 1): 2
+
+--------- Issue Receipt ---------
+Student   : sarthak
+Branch    : cse
+Roll No   : 18
+Mobile No : 9422395817
+Books Issued:
+  - Digital Electronics
+----------------------------------
+
+========= MAIN MENU =========
+1. Issue Books
+2. Return Book
+3. View Available Books
+4. View Issued Books
+5. Exit
+=============================
+Enter your choice (1-5): 2
+
+Issued Books:
+1. Digital Electronics (Issued to: sarthak)
+
+Enter book number to return: 1
+Book returned successfully.
+
+========= MAIN MENU =========
+1. Issue Books
+2. Return Book
+3. View Available Books
+4. View Issued Books
+5. Exit
+=============================
+Enter your choice (1-5): 
